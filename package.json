@@ -1,0 +1,27 @@
+{
+  "name": "deezer-api-ts",
+  "version": "1.0.0",
+  "description": "🥁 Node.js library for Deezer Public API",
+  "main": "index.js",
+  "repository": "https://github.com/tanukijs/deezer-api-ts",
+  "author": {
+    "name": "tanukijs",
+    "email": "tanuki.contact@gmail.com",
+    "url": "https://github.com/tanukijs"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "got": "^11.8.2"
+  },
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.1",
+    "@types/node": "^15.12.2",
+    "rimraf": "^3.0.2",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.4"
+  },
+  "scripts": {
+    "build": "rimraf dist/ && tsc",
+    "watch": "rimraf dist/ && tsc --watch"
+  }
+}
