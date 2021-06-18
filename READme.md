@@ -2,7 +2,6 @@
 
 ![npm](https://img.shields.io/npm/v/deezer-api-ts?style=flat-square) 
 ![License](https://img.shields.io/github/license/tanukijs/deezer-api-ts?style=flat-square)
-![Dependencies](https://img.shields.io/librariesio/github/tanukijs/deezer-api-ts?style=flat-square)
 
 Unofficial Deezer API for Node.js written in TypeScript.
 
