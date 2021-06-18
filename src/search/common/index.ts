@@ -5,21 +5,24 @@ import { OptionalParametersInterface } from './interfaces/OptionalParameters'
 
 export async function request<T>(
   segment: string,
-  query: QueryInterface,
+  query: string|QueryInterface,
   parameters?: OptionalParametersInterface
 ): Promise<ResponseInterface<T>> {
-  const queryKeys = Object.keys(query)
-  const q = queryKeys
-    .map((key: string) => {
-      const value: any = query[key as keyof QueryInterface]
-      const formattedValue = typeof value == 'string'
-        ? `"${value}"`
-        : value
-
-        return `${key}:${formattedValue}`
-    })
-    .join(' ')
-
+  const q = typeof query === 'string' ? query : formatQuery(query)
   const searchParams = { ...parameters, q }
   return got('https://api.deezer.com/search/' + segment, { searchParams }).json()
+}
+
+function formatQuery(query: QueryInterface): string {
+  return Object.keys(query)
+    .map((key: string) => formatPair(key, query[key as keyof QueryInterface]))
+    .join(' ')
+}
+
+function formatPair(key: string, value: any): string {
+  const formattedValue = typeof value == 'string'
+    ? `"${value}"`
+    : value
+
+  return `${key}:${formattedValue}`
 }

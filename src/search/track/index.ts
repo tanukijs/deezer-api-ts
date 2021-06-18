@@ -4,7 +4,7 @@ import { QueryInterface } from '../common/interfaces/Query'
 import { ResponseInterface } from '../common/interfaces/Response'
 import { OptionalParametersInterface } from '../common/interfaces/OptionalParameters'
 
-export function getTracks(
+export function searchTracks(
   query: QueryInterface, 
   parameters?: OptionalParametersInterface
 ): Promise<ResponseInterface<TrackInterface>> {

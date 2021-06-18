@@ -4,7 +4,7 @@ import { QueryInterface } from '../common/interfaces/Query'
 import { ResponseInterface } from '../common/interfaces/Response'
 import { OptionalParametersInterface } from '../common/interfaces/OptionalParameters'
 
-export function getAlbums(
+export function searchAlbums(
   query: QueryInterface, 
   parameters?: OptionalParametersInterface
 ): Promise<ResponseInterface<AlbumInterface>> {
