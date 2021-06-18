@@ -1,6 +1,6 @@
 {
   "name": "deezer-api-ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "🥁 Node.js library for Deezer Public API",
   "main": "index.js",
   "repository": "https://github.com/tanukijs/deezer-api-ts",
@@ -10,6 +10,18 @@
     "url": "https://github.com/tanukijs"
   },
   "license": "MIT",
+  "keywords": [
+    "api",
+    "deezer",
+    "spotify",
+    "deezer-api",
+    "spotify-api",
+    "deezer wrapper",
+    "deezer sdk",
+    "deezer helper",
+    "track api",
+    "song api"
+  ],
   "dependencies": {
     "got": "^11.8.2"
   },
