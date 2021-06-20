@@ -23,6 +23,16 @@ With npm: npm i deezer-api-ts
 With yarn: yarn add deezer-api-ts
 ```
 
+## Available methods
+- `DeezerApi.getAlbum`
+- `DeezerApi.getAlbumTracks`
+- `DeezerApi.getArtist`
+- `DeezerApi.getArtistAlbums`
+- `DeezerApi.searchAlbums`
+- `DeezerApi.searchArtists`
+- `DeezerApi.searchTracks`
+- `DeezerApi.getTrack`
+
 ## Authors
 
 - [tanukijs](https://github.com/tanukijs)
