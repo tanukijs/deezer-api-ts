@@ -1,6 +1,17 @@
-import { ArtistInterface } from './Artist'
+interface AlbumArtist {
+  id: string
+  name: string
+  link: string
+  picture: string
+  picture_small: string
+  picture_medium: string
+  picture_big: string
+  picture_xl: string
+  tracklist: string
+  type: string
+}
 
-export interface AlbumInterface {
+export interface SearchAlbumResponse {
   id: string
   title: string
   link: string
@@ -15,6 +26,6 @@ export interface AlbumInterface {
   record_type: string
   tracklist: string
   explicit_lyrics: boolean
-  artist: ArtistInterface
+  artist: AlbumArtist
   type: string
 }
