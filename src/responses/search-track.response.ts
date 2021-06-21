@@ -1,5 +1,5 @@
-interface TrackArtist {
-  id: string
+export interface SearchTrackArtist {
+  id: number
   name: string
   link: string
   picture: string
@@ -11,8 +11,8 @@ interface TrackArtist {
   type: string
 }
 
-interface TrackAlbum {
-  id: string
+export interface SearchTrackAlbum {
+  id: number
   title: string
   cover: string
   cover_small: string
@@ -25,7 +25,7 @@ interface TrackAlbum {
 }
 
 export interface SearchTrackResponse {
-  id: string
+  id: number
   readable: boolean
   title: string
   title_short: string
@@ -38,7 +38,7 @@ export interface SearchTrackResponse {
   explicit_content_cover: number
   preview: string
   md5_image: string
-  artist: TrackArtist
-  album: TrackAlbum
+  artist: SearchTrackArtist
+  album: SearchTrackAlbum
   type: string
 }

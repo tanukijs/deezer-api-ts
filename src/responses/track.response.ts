@@ -1,4 +1,4 @@
-interface TrackContributor {
+export interface TrackContributor {
   id: number
   name: string
   link: string
@@ -14,8 +14,8 @@ interface TrackContributor {
   role: string
 }
 
-interface TrackArtist {
-  id: string
+export interface TrackArtist {
+  id: number
   name: string
   link: string
   share: string
@@ -29,8 +29,8 @@ interface TrackArtist {
   type: string
 }
 
-interface TrackAlbum {
-  id: string
+export interface TrackAlbum {
+  id: number
   title: string
   link: string
   cover: string
@@ -45,7 +45,7 @@ interface TrackAlbum {
 }
 
 export interface TrackResponse {
-  id: string
+  id: number
   readable: boolean
   title: string
   title_short: string

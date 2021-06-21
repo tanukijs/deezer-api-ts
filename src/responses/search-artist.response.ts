@@ -1,5 +1,5 @@
 export interface SearchArtistResponse {
-  id: string
+  id: number
   name: string
   link: string
   picture: string

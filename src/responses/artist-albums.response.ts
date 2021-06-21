@@ -1,5 +1,5 @@
 export interface ArtistAlbumResponse {
-  id: string
+  id: number
   title: string
   link: string
   cover: string

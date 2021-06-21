@@ -1,12 +1,12 @@
-interface AlbumArtist {
-  id: string
+export interface AlbumArtist {
+  id: number
   name: string
   tracklist: string
   type: string
 }
 
 export interface AlbumTracksResponse {
-  id: string
+  id: number
   readable: boolean
   title: string
   title_short: string

@@ -1,5 +1,5 @@
 export interface ArtistResponse {
-  id: string
+  id: number
   name: string
   link: string
   share: string

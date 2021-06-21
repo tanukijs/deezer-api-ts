@@ -1,5 +1,5 @@
-interface AlbumArtist {
-  id: string
+export interface SearchAlbumArtist {
+  id: number
   name: string
   link: string
   picture: string
@@ -12,7 +12,7 @@ interface AlbumArtist {
 }
 
 export interface SearchAlbumResponse {
-  id: string
+  id: number
   title: string
   link: string
   cover: string
@@ -26,6 +26,6 @@ export interface SearchAlbumResponse {
   record_type: string
   tracklist: string
   explicit_lyrics: boolean
-  artist: AlbumArtist
+  artist: SearchAlbumArtist
   type: string
 }

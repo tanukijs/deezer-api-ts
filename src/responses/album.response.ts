@@ -1,4 +1,4 @@
-interface AlbumContributor {
+export interface AlbumContributor {
   id: number
   name: string
   link: string
@@ -14,8 +14,8 @@ interface AlbumContributor {
   role: string
 }
 
-interface AlbumArtist {
-  id: string
+export interface AlbumArtist {
+  id: number
   name: string
   picture: string
   picture_small: string
@@ -26,15 +26,15 @@ interface AlbumArtist {
   type: string
 }
 
-interface TrackArtist {
-  id: string
+export interface TrackArtist {
+  id: number
   name: string
   tracklist: string
   type: string
 }
 
-interface AlbumTrack {
-  id: string
+export interface AlbumTrack {
+  id: number
   readable: boolean
   title: string
   title_short: string
@@ -51,7 +51,7 @@ interface AlbumTrack {
   type: string
 }
 
-interface AlbumGenre {
+export interface AlbumGenre {
   id: number
   name: string
   picture: string
@@ -59,7 +59,7 @@ interface AlbumGenre {
 }
 
 export interface AlbumResponse {
-  id: string
+  id: number
   title: string
   upc: string
   link: string
