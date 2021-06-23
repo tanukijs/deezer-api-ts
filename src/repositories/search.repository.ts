@@ -55,11 +55,17 @@ interface Query {
   bpm_max?: number
 }
 
+interface ResponseError {
+  type: string
+  message: string
+}
+
 interface Response<T> {
   data: T[]
   total: number
   prev?: string
   next?: string
+  error?: ResponseError
 }
 
 async function request<T>(
