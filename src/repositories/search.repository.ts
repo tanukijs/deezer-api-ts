@@ -2,6 +2,7 @@ import got from 'got'
 import { SearchAlbumResponse } from '../responses/search-album.response'
 import { SearchArtistResponse } from '../responses/search-artist.response'
 import { SearchTrackResponse } from '../responses/search-track.response'
+import { SearchPlaylistResponse } from '../responses/search-playlist.response'
 
 export function searchAlbums(
   query: Query, 
@@ -22,6 +23,13 @@ export function searchTracks(
   parameters?: OptionalParameters
 ): Promise<Response<SearchTrackResponse>> {
   return request<SearchTrackResponse>('track', query, parameters)
+}
+
+export function searchPlaylists(
+  query: Query, 
+  parameters?: OptionalParameters
+): Promise<Response<SearchPlaylistResponse>> {
+  return request<SearchPlaylistResponse>('playlist', query, parameters)
 }
 
 enum Order {
