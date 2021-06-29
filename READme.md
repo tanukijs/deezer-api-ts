@@ -24,14 +24,17 @@ With yarn: yarn add deezer-api-ts
 ```
 
 ## Available methods
-- `DeezerApi.getAlbum`
-- `DeezerApi.getAlbumTracks`
-- `DeezerApi.getArtist`
-- `DeezerApi.getArtistAlbums`
-- `DeezerApi.searchAlbums`
-- `DeezerApi.searchArtists`
-- `DeezerApi.searchTracks`
-- `DeezerApi.getTrack`
+- `DeezerApi.getAlbum(albumId)`
+- `DeezerApi.getAlbumTracks(albumId)`
+- `DeezerApi.getAlbumFans(albumId)`
+- `DeezerApi.getArtist(artistId)`
+- `DeezerApi.getArtistAlbums(artistId)`
+- `DeezerApi.searchAlbums(query, parameters)`
+- `DeezerApi.searchArtists(query, parameters)`
+- `DeezerApi.searchTracks(query, parameters)`
+- `DeezerApi.searchPlaylists(query, parameters)`
+- `DeezerApi.searchPodcasts(query, parameters)`
+- `DeezerApi.getTrack(trackId)`
 
 ## Authors
 
