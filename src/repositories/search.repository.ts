@@ -3,6 +3,7 @@ import { SearchAlbumResponse } from '../responses/search-album.response'
 import { SearchArtistResponse } from '../responses/search-artist.response'
 import { SearchTrackResponse } from '../responses/search-track.response'
 import { SearchPlaylistResponse } from '../responses/search-playlist.response'
+import { SearchPodcastResponse } from '../responses/search-podcast.response'
 
 export function searchAlbums(
   query: Query, 
@@ -30,6 +31,13 @@ export function searchPlaylists(
   parameters?: OptionalParameters
 ): Promise<Response<SearchPlaylistResponse>> {
   return request<SearchPlaylistResponse>('playlist', query, parameters)
+}
+
+export function searchPodcasts(
+  query: Query, 
+  parameters?: OptionalParameters
+): Promise<Response<SearchPodcastResponse>> {
+  return request<SearchPodcastResponse>('playlist', query, parameters)
 }
 
 enum Order {
