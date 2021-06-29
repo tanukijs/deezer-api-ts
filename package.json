@@ -1,6 +1,6 @@
 {
   "name": "deezer-api-ts",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "🥁 Node.js library for Deezer Public API",
   "main": "dist/index.js",
   "repository": "https://github.com/tanukijs/deezer-api-ts",
