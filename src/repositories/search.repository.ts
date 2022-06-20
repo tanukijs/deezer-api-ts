@@ -6,35 +6,35 @@ import { SearchPlaylistResponse } from '../responses/search-playlist.response'
 import { SearchPodcastResponse } from '../responses/search-podcast.response'
 
 export function searchAlbums(
-  query: string, 
+  query: string|Query, 
   parameters?: OptionalParameters
 ): Promise<Response<SearchAlbumResponse>> {
   return request<SearchAlbumResponse>('album', query, parameters)
 }
 
 export function searchArtists(
-  query: string, 
+  query: string|Query, 
   parameters?: OptionalParameters
 ): Promise<Response<SearchArtistResponse>> {
   return request<SearchArtistResponse>('artist', query, parameters)
 }
 
 export function searchTracks(
-  query: string, 
+  query: string|Query, 
   parameters?: OptionalParameters
 ): Promise<Response<SearchTrackResponse>> {
   return request<SearchTrackResponse>('track', query, parameters)
 }
 
 export function searchPlaylists(
-  query: string, 
+  query: string|Query, 
   parameters?: OptionalParameters
 ): Promise<Response<SearchPlaylistResponse>> {
   return request<SearchPlaylistResponse>('playlist', query, parameters)
 }
 
 export function searchPodcasts(
-  query: string, 
+  query: string|Query, 
   parameters?: OptionalParameters
 ): Promise<Response<SearchPodcastResponse>> {
   return request<SearchPodcastResponse>('playlist', query, parameters)
